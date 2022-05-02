@@ -1,0 +1,1514 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+html,
+body 
+{
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+    max-width: 100%;
+    overflow-x: hidden;
+  
+}
+.GPW{
+  position: absolute;
+  margin-left: 91%;
+ 
+}
+body 
+{
+  position: relative;
+  background: white;
+  color: rgb(255, 255, 255);
+  font-family: sans-serif;
+}
+
+a 
+{
+  color: white;
+  text-decoration: none ;
+  opacity: 1;
+}
+
+.content 
+{
+  display: inline-block;
+  max-width: 100%;
+  margin: 0 auto;
+  top: 20px;
+}
+
+nav 
+{
+  background-size: cover;
+  width: 100%;
+  margin: 10px auto;
+  background-color: rgb(154, 154, 170);
+  padding: 10px 0;
+  top: 20px;
+  display: inline-flex;
+  font-family: sans-serif;
+  font-size: 12pt;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+nav ul
+{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav li
+{
+	margin: 0;
+	padding: 0;
+	float: left;	
+	position: relative;	
+}
+
+nav a 
+{
+	padding: 10px 25px;
+	display: block;
+	font-size: 12px;
+	font-weight: 400;
+	color: rgb(0, 0, 0);
+	text-align: center;
+	text-decoration: none;	
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+}
+
+nav li:hover a
+{
+	background-color: rgb(154, 154, 170);
+
+}
+
+nav li ul 
+{
+	width: auto;
+	float: left;
+	visibility: hidden;
+	position: absolute;
+	left: 0;
+	top: 40px;
+	z-index: 1;
+  font-family: sans-serif;
+	opacity: 0;	
+	-webkit-transition: all .25s ease;
+	-moz-transition: all .25s ease;
+	-ms-transition: all .25s ease;
+	-o-transition: all .25s ease;
+	transition: all .25s ease;
+}
+
+nav li:hover ul 
+{
+	visibility: visible;
+	top: 50px;
+	opacity: 1;
+}
+nav li ul li 
+{ 
+  margin-right: 100px;
+	width: 100%;
+}
+nav li ul li a
+{
+	width: 100%;
+	text-align: left;
+}
+
+
+nav a 
+{  
+  font-size: 14px;
+  color: #fff;
+  opacity: 1;
+ 
+}
+.nav-container
+{
+  margin-bottom: 15px;
+  margin-right: 150px;
+}
+nav .logo 
+{
+  background-size: cover;
+  margin-right: 2%;
+}
+header
+{
+  background-size: cover;
+  margin-top: -15px;
+  margin-bottom: -30px;
+  text-align: right;
+  position: relative;
+  left: -25%;
+}
+.header ul li
+{
+      list-style: none;
+      display: inline-block;
+      margin: 10px 5px;
+}
+
+/*=========ICON BAR=========*/
+/*
+.icon-bar {
+  position: absolute;
+  top: 20%;
+  align-self: stretch;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+  align-self: auto;
+}
+
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+ 
+*/
+
+/*============SLIDESHOW==========*/
+
+.container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  height: 600px;
+}
+
+.slideshow {
+  height: 100%;
+  overflow: hidden; /* to hide slides in x-direction */
+  position: relative;
+}
+
+/* wrapper which wraps all the slideshow images stylings */
+.slideshow-wrapper {
+  display: flex;
+  /* We give it width as 400% because we are making a 
+     4 image carousel. If you want to make for example, 
+     5 images carousel, then give width as 500%. */
+  width: 400%;
+  height: 100%;
+  position: relative;
+  /* you can change the animation settings from below */
+  animation: slideshow 25s infinite;
+}
+
+
+/* define width and height for images*/
+.slide1 {
+  width: 100%;
+  height: auto;
+}
+.slide2 {
+  width: 100%;
+  height: auto;
+}
+.slide3 {
+  width: 100%;
+  height: auto;
+}
+.slide4 {
+  width: 100%;
+  height: auto;
+}
+.slide-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+.T1{
+  font-size: 36pt;
+  text-align: left;
+  padding-left: 200px;
+  font-weight: 1000;
+  position: absolute;
+  font-family: 'Poppins', sans-serif;
+  margin:0;
+  left: 0;
+  right: 0;
+  top: 30%;
+  color: white;
+  width: 20%;
+}
+/*  -webkit-animation: fade-inout 4s infinite alternate;
+  -moz-animation: fade-inout 4s infinite alternate;
+  -o-animation: fade-inout 4s infinite alternate;
+   animation: fade-inout 4s infinite alternate;
+
+@keyframes fade-inout {
+  0%{ opacity: 1;}
+  100%{ opacity: 0;}
+}
+
+@-webkit-keyframes fade-inout{
+  0%{ opacity: 1;}
+  100%{ opacity: 0;}
+}
+*/
+
+.T2{
+  position: absolute;
+  font-size: 36pt;
+  text-align: left;
+  padding-left: 2200px;
+  font-weight: 1000;
+  font-family: 'Poppins', sans-serif;
+  margin: 0 ;
+  left: 0;
+  right: 0;
+  top: 30%;
+  color: white;
+  width: 82%;
+}
+
+.T3{
+  position: absolute;
+  font-size: 36pt;
+  text-align: left;
+  padding-left: 3200px;
+  font-weight: 1000;
+  font-family: 'Poppins', sans-serif;
+  margin: 0 ;
+  left: 0;
+  right: 0;
+  top: 30%;
+  color: white;
+  width: 120%;
+}
+
+.T4{
+  position: absolute;
+  font-size: 36pt;
+  text-align: left;
+  padding-left: 4800px;
+  font-weight: 1000;
+  font-family: 'Poppins', sans-serif;
+  margin: 0 ;
+  left: 0;
+  right: 0;
+  top: 30%;
+  color: rgb(11, 0, 114);
+  width: 165%;
+}
+
+
+/* @keyframes are used to provide animations
+ We make these settings for 4 image carousel.
+ Make modification accourding to your needs. */
+@keyframes slideshow {
+  0%  { left: 0; }
+  10% { left: 0; }
+  15% { left: -100%; }
+  25% { left: -100%; }
+  30% { left: -200%; }
+  40% { left: -200%; }
+  45% { left: -300%; }
+  55% { left: -300%; }
+  60% { left: -200%; }
+  70% { left: -200%; }
+  75% { left: -100%; }
+  85% { left: -100%; }
+  90% { left: 0%; }
+}
+
+/* ----- end of slideshow stylings ----- */
+
+/* ----- carousel control buttons stylings ----- */
+.slide-btn {
+  background-color: transparent;
+  border: .2rem solid white;
+  border-radius: 50%;
+  width: 1.2rem;
+  height: 1.2rem;
+  outline: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 3%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 70;
+}
+
+/* As we provide position as absolute, 
+the buttons places one over the other. 
+So, we have to place them individually
+at their correct positions. */
+.slide-btn-1 {
+  left: 45%;
+}
+.slide-btn-2 {
+  left: 48%;
+}
+.slide-btn-3 {
+  left: 51%;
+}
+.slide-btn-4 {
+  left: 54%;
+}
+/* When we focus on the particular button, 
+the animation stops to that particular image 
+to which the button is associated. */
+.slide-btn-1:focus~.slideshow-wrapper {
+  animation: none;
+  left: 0;
+}
+.slide-btn-2:focus~.slideshow-wrapper {
+  animation: none;
+  left: -100%;
+}
+.slide-btn-3:focus~.slideshow-wrapper {
+  animation: none;
+  left: -200%;
+}
+.slide-btn-4:focus~.slideshow-wrapper {
+  animation: none;
+  left: -300%;
+}
+/* when we focus on the button, the background color changes */
+.slide-btn:focus {
+  background-color: #ffffff;
+}
+
+/*============MARQUEE===============*/
+
+.container1 
+{
+  margin-top: 10px;
+  width: 65%;
+  margin-left: 35%;
+  background: rgb(241, 241, 241);
+  display: inline-block;
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 120px;
+  position: relative;
+}
+
+
+.marquee-container ul li
+{
+  position: static;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 1000;
+  font-size: 32px;
+  color: rgb(114, 114, 114);
+  vertical-align: top;
+  line-height: 90px;
+  margin: 10px;
+  display: inline;
+  list-style: none;
+}
+
+.marquee-container img
+{
+  margin-top: 15px;
+}
+
+.vertical-line
+{
+  display: inline-block;
+  border-left: 5px solid #AC2024;
+  margin: 0 20px;
+  height: 55px;
+}
+
+.marquee-sibling 
+{
+  margin-top: 10px;
+  position: fixed;
+  padding: 0;
+  height: 120px;
+  line-height: 20px;
+  text-align: center;
+  float: left;
+  left: 0;
+  z-index: 2000; 
+  width: 35%;
+  align-items: stretch;
+  padding: 20px;
+  font-size: 26px;
+  font-family: 'Open Sans', sans-serif;
+  color: #eaeaea;
+  background-color: rgb(0, 0, 63);
+}
+
+.marquee,
+*[class^="marquee"] 
+{
+display: inline-block;
+white-space: nowrap;
+position: absolute;
+-webkit-marquee: auto medium infinite scroll normal; 
+overflow-x: hidden;
+}
+
+
+ .h1
+  {
+   text-align: center;
+   width: 30%;
+   font-weight: 900;
+   align-items: stretch;
+   position: relative;
+   padding-left: 100px;
+   font-size: 42px;
+   font-family: 'Open Sans', sans-serif;
+   color: #ffffff;
+ 
+  }
+ .h2
+  {
+   text-align: center;
+   color:#012237;
+   font-size: 42px;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 800;
+   }
+  .h22
+  {
+    padding-top: 20px;
+   text-align: center;
+   color:#012237;
+   font-size: 42px;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 800;
+  }
+  .h23
+  {
+   padding-bottom: 25px;
+   text-align: center;
+   color:#012237;
+   font-size: 42px;
+   font-family: 'Open Sans', sans-serif;
+   font-weight: 800;
+  }
+  .h24
+  {
+    padding-bottom: 20px;
+    text-align: center;
+    color:#012237;
+    font-size: 42px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+  }
+  .h25
+  {
+    text-align: center;
+    color:#012237;
+    font-size: 42px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+  }
+ h5
+ {
+   opacity: 0.8;
+    font-size: 20px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    font-weight: 100;
+  }
+
+   body 
+   {
+    font-family: 'Open Sans', sans-serif;
+      color: #000220;
+   }
+   
+   h3 {
+      padding-bottom: 15px;
+      text-align: center;
+       font-size: 36px;
+       font-weight: 900;
+       width: 100%;
+       justify-content: center;
+   }
+   
+   @media (max-width:68px) {
+     h3{
+           width: 50%;
+           font-size: 36px;
+           text-align: center;
+           display: flex;
+       }
+   }
+   .A{
+     margin-left: 35%;
+     font-family: 'Open Sans', sans-serif;
+     font-size: 32px;  
+   }
+     
+   p{
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+   /*======TYPING ANIMAATION============================*/
+   .typing-words
+   {
+     display: flex;
+     justify-content: center;
+     text-align: right;
+   }
+   
+   .text-typing, .text-nowrap 
+   {
+       white-space:nowrap;
+       display: block;
+       text-align: center;
+   }
+   
+   a {
+       color: #000;
+       -webkit-transition: all .30s;
+       -moz-transition: all .30s;
+       transition: all .30s;
+       background-size: 0 100%;
+       background-repeat: no-repeat;
+       -webkit-transition: background-size .4s ease;
+       transition: background-size .4s ease;
+       text-align: center;
+    }
+   
+   .typing-words span 
+   {
+       text-indent: 5px;
+       position: absolute;
+       overflow: hidden;
+       white-space: nowrap;
+       color: rgb(204, 0, 0);
+       visibility: hidden;
+       border-right: 4px solid transparent;
+       width: 50%; 
+       text-align: center;
+   }
+   
+   .typing-words span:nth-child(1) 
+   {
+     animation: typing 1.5s steps(18), typingReverse 1.0s steps(18) 0.7s, blink-wait 1s step-end 1 1.4s, blink-caret 0.6s step-end ;
+   }
+   .typing-words span:nth-child(2) 
+   { 
+     animation: typing 1.5s steps(31) 2.4s, typingReverse 1.0s steps(31) 3.1s, blink-wait 1s step-end 1 3.8s, blink-caret 0.6s step-end ;
+   }
+   .typing-words span:nth-child(3)
+   { 
+     animation: typing 1.5s steps(16) 4.8s, typingReverse 1.0s steps(16) 5.5s, blink-wait 1s step-end 1 6.2s, blink-caret 0.6s step-end ;
+   }
+   .typing-words span:nth-child(4) 
+   { 
+     animation: typing 1.5s steps(28) 7.2s, typingReverse 1.0s steps(28) 7.9s, blink-wait 1s step-end 1 8.6s, blink-caret 0.6s step-end ;
+   }
+   .typing-words span:nth-child(5) 
+   { 
+    animation: typing 1.5s steps(19) 9.6s, typingReverse 1.0s steps(19) 10.3s, blink-wait 1s step-end 1 11.0s, blink-caret 0.6s step-end ;
+   }
+  
+   .typing-words span:nth-child(5) 
+   {  
+     animation: blink-caret 0.6s step-end 1 9.5s, typing 1s steps(19) 9.5s forwards;
+   }
+   
+   @keyframes typing 
+   {
+       from { width: 0; visibility: hidden; }
+       to { width: 100%; visibility: visible; color: #000; }
+   }
+   
+   @keyframes typingReverse 
+   {
+       from { width: 100%; visibility: visible; color: #000; }
+       to { width: 0; }
+   }   
+
+
+
+/*=============IMAGE GRID==========================*/
+.imagegrid {
+	width: 750px;
+  margin: 14%;	
+	display: grid;
+  padding-bottom: 50px;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-template-columns: repeat(4, 1fr);
+
+  grid-gap: 1rem;
+}
+
+.imagegrid-item 
+{
+	position: relative;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+hr {
+  width: 100px;
+  margin-left: 20px;
+  height: 5px;
+  background-color: white;
+}
+.imagegrid .text1 
+{
+  background: rgba(41, 41, 41, 0.8);
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  top: 0%;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+.click1{
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(249, 249, 255);
+  background-color: #259BD6;
+  border: white;
+  width: 120px;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 78%;
+  cursor: pointer;
+}
+.click1:hover
+{
+  background-color: white;
+  color: #000;
+}
+.imagegrid .text2 {
+  background: rgba(41, 41, 41, 0.8);
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 0%;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+.click2{
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(249, 249, 255);
+  background-color: #259BD6;
+  border: white;
+  width: 121px;
+  height: 40px;
+  margin-top: 20px;
+  margin-left: 78%;
+  cursor: pointer;
+}
+.click2:hover{
+  background-color: white;
+  color: #000;
+}
+.imagegrid .text3 {
+  background: rgba(41, 41, 41, 0.8);
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 0%;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+.click3{
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(249, 249, 255);
+  background-color: #259BD6;
+  border: white;
+  width: 120px;
+  height: 40px;
+  margin-top: 40px;
+  margin-left: 78%;
+  cursor: pointer;
+}
+.click3:hover{
+  background-color: white;
+  color: #000;
+}
+.imagegrid .text4{
+  background: rgba(41, 41, 41, 0.8);
+  z-index: 1;
+  position: absolute;
+  text-align: center;
+  font-family: 'Open Sans', sans-serif;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  top: 0%;
+  color: white;
+  width: 100%;
+  height: 100%;
+}
+.click4{
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(249, 249, 255);
+  background-color: #259BD6;
+  border: white;
+  width: 121px;
+  height: 40px;
+  margin-top: 40px;
+  margin-left: 78%;
+  cursor: pointer;
+}
+.P1
+{ 
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+  margin: 20px;
+}
+.click4:hover{
+  background-color: white;
+  color: #000;
+}
+.B1{
+  text-align: left;
+  padding-left: 20px;
+  font-size: 32px;
+}
+@media (min-width: 600px){
+	.imagegrid 
+  {
+		width: 810px;
+		margin-top: 50px;
+    margin-bottom: 20px;
+    margin-right: 100px;
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 1fr;
+	}
+
+}
+
+
+/*=============CARD============*/
+*
+{  
+  box-sizing: border-box;
+ }
+
+body 
+{
+  font-family: 'Open Sans', sans-serif;
+}
+
+.H1
+{
+  font-family: 'Open Sans', sans-serif;
+  opacity: 0.9;
+  position:relative;
+  font-size: 18px;
+  font-weight: 200;
+  text-align: left;
+  margin: 5%;
+  padding-bottom: 25px;
+}
+.H2
+{
+  font-family: 'Open Sans', sans-serif;
+  opacity: 0.9;
+  position:relative;
+  font-size: 18px;
+  font-weight: 200;
+  text-align: left;
+  margin: 5%;
+  padding-bottom: 0px;
+}
+.H3
+{
+  font-family: 'Open Sans', sans-serif;
+  opacity: 0.9;
+  position:relative;
+  font-size: 18px;
+  font-weight: 200;
+  text-align: left;
+  margin: 5%;
+  padding-bottom: 0px;
+}
+.H4
+{
+  font-family: 'Open Sans', sans-serif;
+  opacity: 0.9;
+  position:relative;
+  font-size: 18px;
+  font-weight: 200;
+  text-align: left;
+  margin: 5%;
+  padding-bottom: 25px;
+}
+/* Float four columns side by side */
+.column 
+{
+  float: left;
+  width: 25%;
+  padding: 0 2%;
+
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row 
+{
+  margin: 0 12%;
+}
+
+/* Clear floats after the columns */
+.row:after 
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card 
+{
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(216, 216, 216, 0.63); /* this adds the "card" effect */
+  padding-bottom: 10px;
+  margin-bottom: 30%;
+  text-align: center;
+  background-color:white;
+
+}
+
+@media only screen and (max-width: 700px) {
+  .card {
+    display: flexbox;
+    width: 100%;
+  }
+}
+
+.img1
+{
+  position: relative;
+  padding: 2px;
+  display: flex;
+  float: left;
+  background-color: #269BD6;
+  border-radius: 50%;
+  width: 70%;
+  height: 40%;
+  margin: 15%;
+}
+
+.img2
+{
+    padding: 2px;
+    display: flex;
+    float: left;
+    background-color: #FF6615;
+    border-radius: 50%;
+    width: 70%;
+    height: 40%;
+    margin: 15%;
+}
+
+.img3
+{
+    padding: 2px;
+    display: flex;
+    float: left;
+    background-color: #AC2024;
+    border-radius: 50%;
+    width: 70%;
+    height: 40%;
+    margin: 15%;
+}
+
+.img4
+{  
+  padding: 2px; 
+  display: flex;
+  float: left;
+  background-color: #B045FF;
+  border-radius: 50%;
+  width: 70%;
+  height: 40%;
+  margin: 15%;
+}
+
+.b1{
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(249, 249, 255);
+  background-color: #259BD6;
+  border: white;
+  width: 120px;
+  height: 40px;
+  margin-right: 100px;
+  cursor: pointer;
+}
+.b1:hover{
+  background-color: black;
+}
+.b2{
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(249, 249, 255);
+  background-color: #259BD6;
+  border: white;
+  width: 120px;
+  height: 40px;
+  margin-right: 100px;
+  cursor: pointer;
+ }
+ .b2:hover{
+  background-color: black;
+}
+
+.b3{
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(249, 249, 255);
+  background-color: #259BD6;
+  border: white;
+  width: 120px;
+  height: 40px;
+  margin-right: 100px;
+  cursor: pointer;
+ }
+ .b3:hover{
+  background-color: black;
+}
+
+.b4{
+  font-size: 15px;
+  font-weight: 500;
+  font-family: 'Open Sans', sans-serif;
+  color: rgb(249, 249, 255);
+  background-color: #259BD6;
+  border: white;
+  width: 120px;
+  height: 40px;
+  margin-right: 100px;
+  cursor: pointer;
+ }
+ .b4:hover{
+  background-color: black;
+}
+.card:hover
+{ 
+  box-shadow: 1px 8px 20px grey;
+  transition: all;
+ -webkit-transition:  box-shadow .3s ease-in;
+}
+
+/* Responsive columns - one column layout (vertical) on small screens */
+@media screen and (max-width: 1000px) 
+{
+  .column 
+  {
+    width: 60%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+.card ul
+{ 
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  margin: 10px 0;
+  opacity: 0.9;
+  padding-right: 0.9rem;
+  padding-left: 0.9rem;
+  text-align: left;
+  flex-grow: 1;
+  line-height: 25px;
+}
+
+.card li
+{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  list-style-position: inside;
+  overflow-wrap: break-word;
+  opacity: 0.9;
+  padding-left: 0.9rem;
+  text-indent: -1.5em;
+  text-align: left;
+  line-height: 25px;
+  flex-grow: 1; 
+}
+
+
+/*=============COLOUR GRID===============*/
+.wrapper 
+{
+  position: relative;
+  margin-left: 150px;
+  margin-bottom: 100px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 22% 22% 22% 22%;
+  grid-gap: 10px;
+  grid-template-rows: 200px 200px 200px ;
+
+}
+.item1
+{
+  position: relative;
+  margin-left: 10px;
+  grid-row: span 3;
+  grid-column: span 2;
+}
+.item3
+{
+  background-color: #AC2024;
+}
+.item3 img
+{
+ margin-top: 10px;
+ margin-left: 200px;
+}
+.item3 ul
+{
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+  font-size: 50px;
+  font-weight: 1000;
+  margin-left: -30px;
+  margin-top: -10px;
+  color: white;  
+}
+.item3 p{
+  margin-top: -50px;
+  margin-left: 10px;
+  color: white;  
+  font-weight: 500;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+}
+.item4
+{
+ background-color:#259BD6;
+}
+.item4 img
+{
+  margin-top: 10px;
+  margin-left: 200px;
+ }
+.item4 ul
+{
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+  font-size: 50px;
+  font-weight: 1000;
+  margin-left: -30px;
+  margin-top: -10px;
+  color: white;
+  
+}
+.item4 p{
+  margin-top: -50px;
+  margin-left: 10px;
+  color: white;  
+  font-weight: 500;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+}
+.item7
+{
+  background-color: #FF6800;
+}
+.item7 img
+{
+  margin-top: 10px;
+  margin-left: 200px;
+}
+.item7 ul
+{
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+  font-size: 50px;
+  font-weight: 1000;
+  margin-left: -30px;
+  margin-top: -10px;
+  color: white;
+}
+.item7 p{
+  margin-top: -50px;
+  margin-left: 10px;
+  color: white;  
+  font-weight: 500;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+}
+.item8
+{
+  background-color: #54C9A4;
+}
+.item8 img
+{
+  margin-top: 10px;
+  margin-left: 200px;
+ }
+.item8 ul
+{
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+  font-size: 50px;
+  font-weight: 1000;
+  margin-left: -30px;
+  margin-top: -10px;
+  color: white;
+}
+.item8 p{
+  margin-top: -50px;
+  margin-left: 10px;
+  color: white;  
+  font-weight: 500;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+}
+.item11
+{
+  grid-column: span 2;
+  background-color: #AC3DFF;
+}
+.item11 img
+{
+  margin-top: 10px;
+  margin-left: 500px;
+ }
+.item11 ul
+{
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+  font-size: 50px;
+  font-weight: 1000;
+  margin-left: -30px;
+  margin-top: -10px;
+  color: white;
+}
+.item11 p{
+  margin-top: -50px;
+  margin-left: 10px;
+  color: white;  
+  font-weight: 500;
+  font-size: 18px;
+  font-family: 'Open Sans', sans-serif;
+  text-align: left;
+}
+
+
+ /*================CLIENT SLIDER======================*/
+ @keyframes scroll {
+  0% {
+    transform: translateX(0);
+ }
+  100% {
+    transform: translateX(calc(-250px * 7));
+ }
+}
+.slider {
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, .125);
+  height: 250px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 960px;
+}
+.slider::before, .slider::after {
+  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 300px;
+  position: absolute;
+  width: 100px;
+  z-index: 2;
+}
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+.slider::before {
+  left: 0;
+  top: 0;
+}
+.slider .slide-track {
+  animation: scroll 25s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
+}
+.slider .slide {
+  height: 200px;
+  width: 250px;
+}
+
+/*====================OVERLAY=========================*/
+.portfolio {
+  padding-bottom: 10%;
+	width: 350px;
+	margin: 50px auto;	
+	display: grid;
+	grid-gap: 10px;
+}
+.portfolio-item {
+	position: relative;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+/* Overlay effect */
+.overlay {
+    background-color: #303030;
+    opacity: 0;
+
+    display: flex;
+    justify-content: left;
+    align-items: center;
+
+    position: absolute;
+    top: 0;
+    bottom: 5px;
+    left: 0;
+    right: 0;
+}
+
+.overlay h4 {
+	margin-top: 50px;
+}
+
+.overlay .description {
+    padding-bottom: 60px;
+    padding-left: 10px;
+}
+
+.overlay .description, .overlay a {
+    color: #fff;
+    font-family: sans-serif;
+    text-align: center;
+  
+}
+
+.overlay:hover {
+    opacity: 0.8;
+}
+
+/* Responsive & CSS Grid things */
+@media (min-width: 750px){
+	.portfolio {
+		width: 710px;
+		margin: 50px auto;
+
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: 1fr;
+	}
+
+	.medium {
+		grid-row: span 1;
+	}
+}
+
+/*====================FOOTER=============*/
+.content1{
+  display: inline-block;
+  position: relative;
+  margin: 130px;
+  text-align: center;
+  color: white;
+  padding: 0 20px;
+}
+.content1 .text{
+  font-size: 30px;
+  font-weight: 600;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+}
+.text {
+  color: white;
+}
+.content a:hover
+{
+       color: rgb(0, 183, 255);
+       outline: 0;
+       background-size: 100% 100%;
+       text-decoration: none;
+       text-align: center;
+}
+
+.content1 .p
+{  
+  font-size: 30px;
+  font-weight: 300;
+  color: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+}
+footer
+{ 
+  display: inline-block;
+
+  bottom: -50px;
+  width: 100%;
+  background: rgb(29, 29, 29);
+}
+.main-content{
+  display: flex;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+}
+.main-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+}
+.box h2{
+  font-size: 32px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+.box .content{
+  margin: 20px 0 0 0;
+  position: relative;
+}
+.left .content p{
+  text-align: justify;
+}
+
+.center .content .fas{
+  font-size: 1.4375rem;
+  background: #1a1a1a;
+  height: 45px;
+  width: 45px;
+  line-height: 45px;
+  text-align: center;
+  border-radius: 50%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.btn{
+  margin-top:50px;
+  margin-bottom: 20px;
+  width: 250px;
+  height: 50px;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  background-color: #259BD6;
+  border: transparent;
+  cursor: pointer;
+}
+.btn:hover{
+  background-color: white;
+  color: #000;
+}
+.center .content .text{
+  font-size: 1.0625rem;
+  font-weight: 500;
+  padding-left: 10px;
+}
+.center .content .phone{
+  margin: 15px 0;
+}
+.bottom center{
+  padding: 10px;
+  font-size: 12pt;
+  font-family: 'Open Sans', sans-serif;
+  background: #151515;
+}
+.bottom center span{
+  color: #ffffff;
+}
+@media screen and (max-width: 900px) {
+  footer
+  {
+    position: relative;
+    bottom: 0px;
+  }
+  .main-content{
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
+  .main-content .box{
+    margin: 5px 0;
+  }
+}
+
+.backup {
+  max-height: 90vh;
+  background: #fff;
+  border: 1px solid #000;
+  border-radius: 12px;
+  overflow: auto;
+  box-shadow: 14px 14px 64px rgba(0, 0, 0, 0.3);
+}

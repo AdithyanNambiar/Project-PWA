@@ -1,0 +1,25 @@
+{
+    "name": "Impelsys (PWA)",
+    "short_name": "Impelsys PWA",
+    "icons": 
+    [
+      {
+        "src": "/Icon-192.png",
+        "sizes": "192x192",
+        "type": "image/png",
+        "purpose": "any maskable"
+      },
+  
+      {
+        "src": "/Icon-512.png",
+        "sizes": "512x512",
+        "type": "image/png",
+        "purpose": "any maskable"
+      }
+    ],
+    "theme_color": "#FFFFFF",
+    "background_color": "#FFFFFF",
+    "start_url": "/",
+    "display": "standalone",
+    "orientation": "landscape"
+  }
